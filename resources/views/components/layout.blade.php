@@ -31,7 +31,7 @@
 
 				{{-- FOOTER --}}
 				<footer class="mt-16 mb-4 font-mono text-center">
-					<p>&copy; {{ date('Y') }} | Created by Kyle Barnes</p>
+					<p>&copy; {{ date('Y') }} | Created by <a href="https://github.com/kylewb94" target="_blank" class="underline">Kyle Barnes</a></p>
 				</footer>
 
 				{{-- CREATE FORM MSG --}}

@@ -28,17 +28,17 @@
 					@foreach($listings as $listing)
 
 						<tr class="border-black">
-							<td class="border-t border-b border-black">
+							<td class="py-4 border-t border-b border-black">
 								<a href="/listings/{{$listing->id}}">
 									<x-listing-title :titlesCsv="$listing->titles" />
 								</a>
 							</td>
-							<td class="border-t border-b border-black">
-								<a href="/listings/{{$listing->id}}/edit" class="text-blue-500 hover:text-blue-600 px-6 py-2">
+							<td class="py-4 border-t border-b border-black">
+								<a href="/listings/{{$listing->id}}/edit" class="text-blue-500 hover:text-blue-600">
 									<i class="fa-solid fa-pen-to-square"></i> Edit
 								</a>
 							</td>
-							<td class="border-t border-b border-black">
+							<td class="py-4 border-t border-b border-black">
 								<form method="POST" action="/listings/{{$listing->id}}">
 									@csrf
 									@method('DELETE')

@@ -2,7 +2,7 @@
 
 		<x-back />
 
-		<x-card class="mt-8">
+		<x-card class="my-8">
 			@auth
 				<h1 class="font-mono text-lg font-bold">
 					<i class="fa-solid fa-user"></i> {{auth()->user()->name}}
@@ -14,8 +14,8 @@
 			@endauth
 		</x-card>
 
-		<x-card class="mt-8 p-10 border-0">
-			<header>
+		<x-card class="mb-16 border-0">
+			<header class="mb-8">
 				<h1 class="text-3xl text-center font-bold my-6 uppercase">
 					Manage Listings
 				</h1>
@@ -30,7 +30,7 @@
 						<tr class="border-black">
 							<td class="px-4 py-8 border-t border-b border-black text-lg">
 								<a href="/listings/{{$listing->id}}">
-									{{$listing->title}}
+									<x-listing-title :titlesCsv="$listing->titles" />
 								</a>
 							</td>
 							<td class="px-4 py-8 border-t border-b border-black text-lg">

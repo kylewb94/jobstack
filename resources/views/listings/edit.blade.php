@@ -23,7 +23,7 @@
 
 			<div class="mb-6">
 				<label for="title" class="inline-block text-lg mb-2">Job Title</label>
-				<input type="text" class="border border-black p-2 w-full" name="title" value="{{$listing->title}}" />
+				<input type="text" class="border border-black p-2 w-full" name="titles" value="{{$listing->titles}}" />
 
 				@error('title')
 					<p class="text-red-500 text-xs mt-1">{{$message}}</p>

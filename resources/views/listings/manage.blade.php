@@ -14,7 +14,7 @@
 			@endauth
 		</x-card>
 
-		<x-card class="mb-16 border-0">
+		<x-card class="mb-16 p-0 border-0">
 			<header class="mb-8">
 				<h1 class="text-3xl text-center font-bold my-6 uppercase">
 					Manage Listings
@@ -28,17 +28,17 @@
 					@foreach($listings as $listing)
 
 						<tr class="border-black">
-							<td class="px-4 py-8 border-t border-b border-black text-lg">
+							<td class="border-t border-b border-black">
 								<a href="/listings/{{$listing->id}}">
 									<x-listing-title :titlesCsv="$listing->titles" />
 								</a>
 							</td>
-							<td class="px-4 py-8 border-t border-b border-black text-lg">
+							<td class="border-t border-b border-black">
 								<a href="/listings/{{$listing->id}}/edit" class="text-blue-500 hover:text-blue-600 px-6 py-2">
 									<i class="fa-solid fa-pen-to-square"></i> Edit
 								</a>
 							</td>
-							<td class="px-4 py-8 border-t border-b border-black text-lg">
+							<td class="border-t border-b border-black">
 								<form method="POST" action="/listings/{{$listing->id}}">
 									@csrf
 									@method('DELETE')

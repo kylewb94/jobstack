@@ -1,6 +1,4 @@
 # JobStack
-![Home Page](https://github.com/kylewb94/jobstack/blob/master/public/images/index_1366-768.jpg?raw=true)
-
 Job listings application built with Laravel 9 and MySQL with the following functionality:
 
 #### Users can...
@@ -24,7 +22,6 @@ Job listings application built with Laravel 9 and MySQL with the following funct
 * **Tailwind CSS**
 * **Alpine.js**
 * **bcrypt.js**
-* **Render deployment**
 
 ## Usage
 
@@ -41,3 +38,7 @@ You can search for existing jobs by tile, company, description, or tag. Click on
 If you have **not** created a listing yet, there will be none listed. All listings are associated with the user that created them.
 Once you have created a listing, you can **edit** or **delete** it here.
 
+---
+_JobStack has not been deployed to the web. See screen shot below. More screenshots can be found in the [images](https://github.com/kylewb94/jobstack/blob/master/public/images/) directory._
+
+![Home Page](https://github.com/kylewb94/jobstack/blob/master/public/images/index_1366-768.png?raw=true)

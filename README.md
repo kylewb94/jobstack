@@ -1,4 +1,6 @@
 # JobStack
+![Home Page](https://github.com/kylewb94/jobstack/blob/master/public/images/index_1366-768.jpg?raw=true)
+
 Job listings application built with Laravel 9 and MySQL with the following functionality:
 
 #### Users can...
@@ -38,3 +40,4 @@ You can search for existing jobs by tile, company, description, or tag. Click on
 #### Manage Listings
 If you have **not** created a listing yet, there will be none listed. All listings are associated with the user that created them.
 Once you have created a listing, you can **edit** or **delete** it here.
+
